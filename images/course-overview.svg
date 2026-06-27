@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" role="img" aria-labelledby="courseOverviewTitle">
+  <title id="courseOverviewTitle">Illustration of web course overview</title>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5d7cff"/>
+      <stop offset="100%" stop-color="#8ff3ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="40" width="488" height="280" rx="24" fill="#fff" stroke="#d7e4ff" stroke-width="10"/>
+  <path d="M 40 92 h 160 a 16 16 0 0 1 16 16 v 20 h -192 v -20 a 16 16 0 0 1 16 -16 z" fill="#5d7cff" opacity="0.9"/>
+  <circle cx="112" cy="112" r="16" fill="#fff"/>
+  <circle cx="148" cy="112" r="16" fill="#fff" opacity="0.65"/>
+  <circle cx="184" cy="112" r="16" fill="#fff" opacity="0.35"/>
+  <path d="M 64 160 h 392 v 18 h -392 z M 64 196 h 260 v 18 h -260 z M 64 232 h 330 v 18 h -330 z" fill="#d7e4ff"/>
+  <path d="M 140 284 h 220 v 48 h -220 z" fill="url(#grad1)" opacity="0.95"/>
+  <path d="M 168 284 a 20 20 0 0 1 20 -20 h 84 a 20 20 0 0 1 20 20 v 48 h -124 z" fill="#fff"/>
+  <path d="M 140 284 h 220 v 18 h -220 z" fill="#dfe8ff"/>
+  <rect x="294" y="304" width="70" height="8" rx="4" fill="#5d7cff" opacity="0.9"/>
+  <rect x="294" y="328" width="40" height="8" rx="4" fill="#5d7cff" opacity="0.65"/>
+  <path d="M 380 56 h 80 v 54 h -80 z" fill="#ffca55" opacity="0.95"/>
+  <path d="M 398 72 h 44 v 12 h -44 z" fill="#fff" opacity="0.9"/>
+</svg>
