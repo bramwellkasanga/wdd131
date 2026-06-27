@@ -54,8 +54,8 @@ body {
   justify-content: center;
   padding: 0.8rem 1.2rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #f7fbff;
+  background: rgba(255, 255, 255, 0.22);
+  color: #1b2a41;
   text-decoration: none;
   font-weight: 600;
   transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
