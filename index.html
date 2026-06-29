@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Bramwell Kasanga</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals landing page for Bramwell Kasanga showcasing web fundamentals, responsive design, and JavaScript date updates.">
+  <meta name="author" content="Bramwell Kasanga">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="https://www.linkedin.com/in/bramwell-kasanga" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scriptures</a>
+      <a href="#" aria-label="Final project placeholder">Final Project</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1>Bramwell Kasanga</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <figure>
+        <img src="images/profile.jpg" alt="Photo of Bramwell Kasanga">
+        <figcaption>Bramwell Kasanga, building responsive web pages with HTML, CSS, and JavaScript.</figcaption>
+      </figure>
+      <p>As a WDD 131 student, I am using semantic HTML and CSS layout techniques to create a polished course landing page with dynamic date updates.</p>
+      <ul>
+        <li>Semantic structure with header, main, and footer</li>
+        <li>Responsive navigation and card layout</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Course Focus</h2>
+      <img src="images/timeline.svg" alt="Illustration of learning timeline and development milestones">
+      <p>This assignment demonstrates required course concepts, including local image assets, external CSS, Google Fonts, and deferred JavaScript.</p>
+      <ul>
+        <li>Current year and last-modified date from JavaScript</li>
+        <li>Local SVG and photo assets for fast performance</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>© <span id="currentyear"></span> Bramwell Kasanga | South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+
