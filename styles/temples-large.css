@@ -1,0 +1,33 @@
+@media screen and (min-width: 740px) {
+  main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+
+  nav a {
+    padding: 0.75rem 1rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+}

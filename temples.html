@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bramwell's temple album for WDD 131.">
+    <meta name="author" content="Bramwell Kasanga">
+    <title>WDD 131 – Dynamic Web Fundamentals – Bramwell Kasanga</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <p>Temple Album</p>
+      <button id="menu" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation"></button>
+      <nav>
+        <ul id="site-navigation" class="navigation">
+          <li><a href="#" title="Home" class="active">Home</a></li>
+          <li><a href="#" title="Old">Old</a></li>
+          <li><a href="#" title="New">New</a></li>
+          <li><a href="#" title="Large">Large</a></li>
+          <li><a href="#" title="Small">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+      <figure>
+        <img src="images/johanessburg-temple.jpg" alt="Johannesburg Temple">
+        <figcaption>Johannesburg, South Africa Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/accra-ghana-temple.jpg" alt="Ghana Temple">
+        <figcaption>Accra, Ghana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/bern-switzerland-temple.jpg" alt="Switzerland Temple">
+        <figcaption>Bern, Switzerland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/tokyo_japan_temple.jpg" alt="Tokyo Temple">
+        <figcaption>Tokyo, Japan Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/montona-temple.jpg" alt="Montana Temple">
+        <figcaption>Billings, Montana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/toronto-temple.jpg" alt="Toronto Temple">
+        <figcaption>Toronto, Canada Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/brisbane-australia-temple.jpg" alt="Brisbane Temple">
+        <figcaption>Brisbane, Australia Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/bountiful-utah-temple.jpg" alt="Bountiful Temple">
+        <figcaption>Bountiful, Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/boise-idaho-temple.jpg" alt="Boise Temple">
+        <figcaption>Boise, Idaho Temple</figcaption>
+      </figure>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span>, Bramwell Kasanga, South Africa</p>
+      <p><span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
