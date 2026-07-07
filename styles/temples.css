@@ -1,9 +1,4 @@
 :root {
-  --primary-color: #213c51;
-  --secondary-color: #6594b1;
-  --accent1-color: #ddaed3;
-  --accent2-color: #eeeeee;
-  --bkcolor: #180b5b;
   --heading-font: 'Merriweather';
   --body-font: 'Roboto', sans-serif;
 }
@@ -26,8 +21,8 @@ header {
   font-family: var(--heading-font);
   display: grid;
   gap: 1rem;
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
+  background-color: #213c51;
+  color: #eeeeee;
   text-align: center;
   font-size: 40px;
   padding: 20px;
@@ -56,9 +51,9 @@ main figure {
   text-align: center;
   margin-top: 4px;
   padding: 0.75rem;
-  background: white;
+  background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px #00000014;
 }
 
 main img {
@@ -71,7 +66,7 @@ main img {
 main figcaption {
   margin-top: 0.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #213c51;
 }
 
 nav {
@@ -89,7 +84,7 @@ nav ul {
 
 nav a {
   display: block;
-  color: var(--accent1-color);
+  color: #ddaed3;
   text-align: center;
   text-decoration: none;
 }
@@ -98,13 +93,13 @@ nav a:hover,
 nav a:focus,
 nav a.active {
   text-decoration: underline double;
-  background-color: var(--accent1-color);
-  color: var(--primary-color);
+  background-color: #ddaed3;
+  color: #213c51;
 }
 
 footer {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
+  background-color: #213c51;
+  color: #eeeeee;
   font-size: 1rem;
   padding: 2rem;
   text-align: center;
@@ -114,7 +109,7 @@ footer {
 #menu {
   border: 0;
   background: none;
-  color: var(--accent2-color);
+  color: #eeeeee;
   font-size: 1.35rem;
   cursor: pointer;
 }

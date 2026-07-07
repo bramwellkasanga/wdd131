@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f7fb;
-  color: #223;
+  color: #222233;
 }
 
 header {
@@ -21,9 +21,9 @@ nav {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background: transparent;
+  background: #00000000;
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -34,7 +34,7 @@ nav {
 }
 
 .menu a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
