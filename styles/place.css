@@ -6,7 +6,13 @@
   --surface: #f9f4ea;
   --text: #173442;
   --border: #d8c4b2;
-  --shadow: 0 10px 30px rgba(0, 35, 149, 0.16);
+  --white-75: #ffffffbf;
+  --white-78: #ffffffc7;
+  --black-06: #0000000f;
+  --black-08: #00000014;
+  --black-12: #0000001f;
+  --primary-dark-16: #00239529;
+  --shadow: 0 10px 30px var(--primary-dark-16);
   --heading-font: 'Playfair Display', serif;
   --body-font: 'Inter', sans-serif;
 }
@@ -47,12 +53,12 @@ img {
   margin: 0 auto;
   padding: 1rem 1.25rem 0.95rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--white-75);
   color: var(--primary-dark);
   border-radius: 18px 18px 0 0;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--black-06);
   border-bottom: none;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px var(--black-08);
 }
 
 .site-title {
@@ -126,18 +132,18 @@ img {
 
 .info-card,
 .weather-card {
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: var(--white-78);
+  border: 1px solid var(--black-06);
   border-radius: 10px;
   padding: 0.5rem 0.65rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 18px var(--black-12);
   backdrop-filter: blur(4px);
 }
 
 .data-block p {
   margin: 0;
   padding: 0.12rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid var(--black-08);
   font-size: 0.76rem;
 }
 
@@ -145,10 +151,11 @@ img {
   border-bottom: none;
 }
 
-.weather-icon-mobile {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 0.2rem;
+.weather-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 0.35rem;
+  vertical-align: -0.16em;
 }
 
 .weather-card p {
@@ -159,12 +166,12 @@ img {
 footer {
   max-width: 1100px;
   margin: 0 auto 1rem;
-  background: rgba(255, 255, 255, 0.78);
+  background: var(--white-78);
   color: var(--primary-dark);
   text-align: center;
   padding: 1rem 1rem 1.25rem;
   border-radius: 0 0 18px 18px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--black-06);
   border-top: none;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px var(--black-08);
 }

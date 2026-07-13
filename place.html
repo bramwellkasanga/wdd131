@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore South Africa through a responsive place page featuring local highlights, weather details, and travel inspiration.">
+    <meta name="description" content="Discover South Africa's landscapes, culture, and current weather on a responsive WDD 131 place page built for travel inspiration.">
     <meta name="author" content="Bramwell Kasanga">
-    <title>WDD 131 | Place Page | South Africa</title>
+    <title>WDD 131 | Place: South Africa</title>
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/getdates.js" defer></script>
@@ -43,7 +43,14 @@
               <p><strong>Internet TLD:</strong> .za</p>
             </section>
             <aside class="weather-card" aria-labelledby="weather-heading">
-              <h2 id="weather-heading">Weather</h2>
+              <h2 id="weather-heading">
+                Weather
+                <svg class="weather-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="22" r="10" fill="#ffb612" />
+                  <path d="M20 7v-4M20 41v-4M5 22H1M39 22h-4M9 11l-3-3M34 36l-3-3M9 33l-3 3M34 8l-3 3" stroke="#ffb612" stroke-width="3" stroke-linecap="round" />
+                  <path d="M42 44c5.5 0 10-4.3 10-9.6s-4.1-9.3-9.3-9.6c-1.5-5-6.2-8.6-11.7-8.6-6.6 0-12 5.1-12 11.4v.4c-4.6.5-8.2 4.3-8.2 9 0 5 4.2 9 9.4 9H42z" fill="#ffffff" stroke="#173442" stroke-width="2" />
+                </svg>
+              </h2>
               <p>Conditions: Mild and sunny in Cape Town.</p>
               <p>Temperature: <span id="temperature">8°C</span></p>
               <p>Wind speed: <span id="windSpeed">12 km/h</span></p>
