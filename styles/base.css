@@ -49,6 +49,7 @@ body {
 }
 
 .site-nav a {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -61,11 +62,31 @@ body {
   transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: 0.45rem;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0;
+  transform: scaleX(0.8);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible {
   background: #ffffff;
   color: #1b2a41;
   transform: translateY(-1px);
+}
+
+.site-nav a:hover::after,
+.site-nav a:focus-visible::after {
+  opacity: 0.7;
+  transform: scaleX(1);
 }
 
 .page-main {
