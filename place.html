@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore South Africa through a responsive place page featuring local highlights, weather details, and travel inspiration.">
+    <meta name="author" content="Bramwell Kasanga">
+    <title>WDD 131 | Place Page | South Africa</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="site-title">South Africa</p>
+    </header>
+
+    <main class="place-page">
+      <section class="hero" aria-labelledby="place-heading">
+        <img
+          srcset="images/springbok.webp 800w, images/springbok.jpg 1200w"
+          sizes="(max-width: 700px) 100vw, 60vw"
+          src="images/springbok.webp"
+          alt="Springbok animal in South Africa"
+          loading="eager"
+        >
+        <div class="hero-overlay">
+          <div class="hero-panels">
+            <div class="info-card data-block" aria-labelledby="data-heading">
+              <h2 id="data-heading">Data</h2>
+              <p><strong>Area:</strong> 1,221,037 km²</p>
+              <p><strong>Population:</strong> 65,495,110</p>
+              <p><strong>Capital:</strong> Pretoria, Cape Town, Bloemfontein</p>
+              <p><strong>Languages:</strong> Zulu, Xhosa, Afrikaans, English, and others</p>
+              <p><strong>Currency:</strong> South African Rand (ZAR)</p>
+              <p><strong>Time Zone:</strong> SAST (UTC+2)</p>
+              <p><strong>Calling Code:</strong> +27</p>
+              <p><strong>Internet TLD:</strong> .za</p>
+            </div>
+            <aside class="weather-card" aria-labelledby="weather-heading">
+              <h2 id="weather-heading">Weather</h2>
+              <p>Conditions: Mild and sunny in Cape Town.</p>
+              <p>Temperature: <span id="temperature">8°C</span></p>
+              <p>Wind speed: <span id="windSpeed">12 km/h</span></p>
+              <p>Wind chill: <span id="windChill">N/A</span></p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span>, Bramwell Kasanga, South Africa</p>
+      <p><span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

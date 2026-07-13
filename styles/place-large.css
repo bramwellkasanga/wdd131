@@ -1,0 +1,66 @@
+@media (min-width: 700px) {
+  .site-header {
+    padding-inline: 2rem;
+  }
+
+  .place-page {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .hero {
+    min-height: 460px;
+    overflow: hidden;
+  }
+
+  .hero img {
+    height: 100%;
+    min-height: 460px;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 0.9rem 1rem;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.14) 45%, rgba(0, 0, 0, 0.18) 100%);
+  }
+
+  .hero-panels {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-content: space-between;
+    justify-items: start;
+    padding: 0.9rem 1rem;
+  }
+
+  .data-block {
+    max-width: min(100%, 260px);
+    gap: 0.2rem 0.4rem;
+    padding: 0.2rem 0.03rem;
+    align-self: start;
+    justify-self: start;
+  }
+
+  .info-card,
+  .weather-card {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(4px);
+  }
+
+  .weather-card {
+    min-width: 0;
+    padding: 0.65rem 0.75rem;
+    justify-self: end;
+    align-self: end;
+    width: auto;
+    max-width: min(100%, 220px);
+  }
+
+  .weather-card h2::after {
+    content: ' ⛅';
+    display: inline-block;
+    margin-left: 0.35rem;
+  }
+}
