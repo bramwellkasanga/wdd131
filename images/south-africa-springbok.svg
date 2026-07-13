@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="South Africa flag with a springbok silhouette">
+  <rect width="1200" height="800" fill="#007749" />
+  <rect y="0" width="1200" height="260" fill="#ffb612" />
+  <rect y="260" width="1200" height="280" fill="#ffffff" />
+  <rect y="540" width="1200" height="260" fill="#007749" />
+  <path d="M0 0L1200 800H0Z" fill="#002395" />
+  <path d="M0 800L1200 0H0Z" fill="#de3831" />
+  <path d="M120 180c-20 55-20 95 0 150c30 80 115 130 175 150c-15-43-20-90-20-148c0-63 12-118 25-170c-30-18-52-34-85-50c-25-12-55-12-95-20Z" fill="#ffffff" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M220 230c30-20 72-25 100-10c30 16 43 42 40 75c-4 32-22 54-48 66c-34 15-82 15-112-8c-28-21-34-54-20-86c12-27 22-29 40-37Z" fill="#ffb612" />
+  <path d="M270 220c22-12 53-8 72 7c20 16 25 42 14 64c-11 24-34 39-58 38c-24 0-40-15-48-41c-8-29 3-58 20-68Z" fill="#ffffff" />
+  <path d="M250 305c16-28 40-41 81-41c32 0 61 3 83 18c-14 24-33 40-56 50c-31 14-62 14-90 8c-15-3-18-8-18-35Z" fill="#002395" />
+</svg>
