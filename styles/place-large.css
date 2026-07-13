@@ -38,14 +38,15 @@
     max-width: min(100%, 260px);
     gap: 0.2rem 0.4rem;
     padding: 0.2rem 0.03rem;
+    margin-top: 3.25rem;
     align-self: start;
     justify-self: start;
   }
 
   .info-card,
   .weather-card {
-    background: var(--white-78);
-    border: 1px solid var(--black-06);
+    background: var(--surface-glass-78);
+    border: 1px solid var(--ink-alpha-06);
     backdrop-filter: blur(4px);
   }
 

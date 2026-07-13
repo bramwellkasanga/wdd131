@@ -6,11 +6,11 @@
   --surface: #f9f4ea;
   --text: #173442;
   --border: #d8c4b2;
-  --white-75: #ffffffbf;
-  --white-78: #ffffffc7;
-  --black-06: #0000000f;
-  --black-08: #00000014;
-  --black-12: #0000001f;
+  --surface-glass-75: #ffffffbf;
+  --surface-glass-78: #ffffffc7;
+  --ink-alpha-06: #0000000f;
+  --ink-alpha-08: #00000014;
+  --ink-alpha-12: #0000001f;
   --primary-dark-16: #00239529;
   --shadow: 0 10px 30px var(--primary-dark-16);
   --heading-font: 'Playfair Display', serif;
@@ -53,12 +53,12 @@ img {
   margin: 0 auto;
   padding: 1rem 1.25rem 0.95rem;
   text-align: center;
-  background: var(--white-75);
+  background: var(--surface-glass-75);
   color: var(--primary-dark);
   border-radius: 18px 18px 0 0;
-  border: 1px solid var(--black-06);
-  border-bottom: none;
-  box-shadow: 0 6px 18px var(--black-08);
+  border: 1px solid var(--ink-alpha-06);
+  border-bottom: 0;
+  box-shadow: 0 6px 18px var(--ink-alpha-08);
 }
 
 .site-title {
@@ -69,6 +69,16 @@ img {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.site-header::after {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 4px;
+  margin: 0.5rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-strong) 100%);
 }
 
 .place-page {
@@ -132,23 +142,23 @@ img {
 
 .info-card,
 .weather-card {
-  background: var(--white-78);
-  border: 1px solid var(--black-06);
+  background: var(--surface-glass-78);
+  border: 1px solid var(--ink-alpha-06);
   border-radius: 10px;
   padding: 0.5rem 0.65rem;
-  box-shadow: 0 6px 18px var(--black-12);
+  box-shadow: 0 6px 18px var(--ink-alpha-12);
   backdrop-filter: blur(4px);
 }
 
 .data-block p {
   margin: 0;
   padding: 0.12rem 0;
-  border-bottom: 1px solid var(--black-08);
+  border-bottom: 1px solid var(--ink-alpha-08);
   font-size: 0.76rem;
 }
 
 .data-block p:last-child {
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .weather-icon {
@@ -166,12 +176,12 @@ img {
 footer {
   max-width: 1100px;
   margin: 0 auto 1rem;
-  background: var(--white-78);
+  background: var(--surface-glass-78);
   color: var(--primary-dark);
   text-align: center;
   padding: 1rem 1rem 1.25rem;
   border-radius: 0 0 18px 18px;
-  border: 1px solid var(--black-06);
-  border-top: none;
-  box-shadow: 0 6px 18px var(--black-08);
+  border: 1px solid var(--ink-alpha-06);
+  border-top: 0;
+  box-shadow: 0 6px 18px var(--ink-alpha-08);
 }
