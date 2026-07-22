@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Crypto wallet illustration</title>
+  <desc id="desc">A digital wallet card with security lock icon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102028" />
+      <stop offset="100%" stop-color="#1f4f64" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="28" />
+  <rect x="120" y="140" width="560" height="240" rx="20" fill="#f6f4ec" />
+  <rect x="500" y="205" width="190" height="110" rx="14" fill="#1c3a50" />
+  <circle cx="548" cy="260" r="17" fill="#f4b400" />
+  <g fill="none" stroke="#1c3a50" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="230" y="218" width="128" height="92" rx="12" />
+    <path d="M257 218v-26c0-21 17-38 38-38s38 17 38 38v26" />
+  </g>
+  <g fill="#1c3a50" font-family="Verdana, sans-serif" font-size="28">
+    <text x="160" y="195">DIGITAL WALLET</text>
+    <text x="160" y="355" font-size="22">Private keys stay protected.</text>
+  </g>
+</svg>

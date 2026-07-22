@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact page for beginner crypto questions and learning support." />
+  <meta name="theme-color" content="#16506a" />
+  <title>Crypto Basics Hub | Contact</title>
+  <link rel="stylesheet" href="styles/site.css" />
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <strong>Crypto Basics Hub</strong>
+        <span>Beginner education and safety-first learning</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="panel">
+      <h1>Ask a Beginner Crypto Question</h1>
+      <p>
+        This form demonstrates standard HTML form practices with labels, required fields, and input constraints.
+      </p>
+
+      <form id="contact-form">
+        <div class="form-row">
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="full-name" required minlength="3" maxlength="50" autocomplete="name" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+
+        <div class="form-row">
+          <label for="experience">Experience level</label>
+          <select id="experience" name="experience" required>
+            <option value="">Select one</option>
+            <option value="new">Completely new</option>
+            <option value="basic">Know the basics</option>
+            <option value="intermediate">Some trading experience</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="question">Your question</label>
+          <textarea id="question" name="question" rows="5" required minlength="20" maxlength="500"></textarea>
+        </div>
+
+        <button type="submit">Submit Question</button>
+      </form>
+
+      <p id="form-feedback" class="notice" aria-live="polite">No submission yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="current-year"></span> Crypto Basics Hub</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="tools.html">Tools</a>
+        <a href="contact.html">Contact</a>
+        <a href="references.html">References</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

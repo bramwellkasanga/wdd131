@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive crypto tools: beginner readiness quiz and localStorage watchlist." />
+  <meta name="theme-color" content="#16506a" />
+  <title>Crypto Basics Hub | Tools</title>
+  <link rel="stylesheet" href="styles/site.css" />
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/tools.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <strong>Crypto Basics Hub</strong>
+        <span>Beginner education and safety-first learning</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" id="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="tools.html" aria-current="page">Tools</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="panel">
+      <h1>Crypto Readiness Quiz</h1>
+      <p>Answer these questions to estimate whether you are ready to start with real money.</p>
+      <form id="quiz-form">
+        <div class="form-row">
+          <label for="q1">Do you understand what a private key does?</label>
+          <select id="q1" required>
+            <option value="">Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="q2">Do you have an emergency fund before investing?</label>
+          <select id="q2" required>
+            <option value="">Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="q3">Can you explain your risk strategy in one sentence?</label>
+          <select id="q3" required>
+            <option value="">Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button type="submit">Evaluate Readiness</button>
+      </form>
+      <p id="quiz-result" class="notice" aria-live="polite">Submit the quiz to see your result.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Watchlist Builder</h2>
+      <p>Save one coin or token to your local watchlist.</p>
+      <form id="watchlist-form">
+        <div class="form-row">
+          <label for="asset-name">Asset symbol or name</label>
+          <input id="asset-name" name="asset-name" minlength="2" maxlength="20" required />
+        </div>
+        <button type="submit">Save Asset</button>
+      </form>
+      <div id="watchlist-output" class="notice" aria-live="polite"></div>
+      <img src="images/risk.svg" alt="Risk management chart with increasing risk levels" width="800" height="500" loading="lazy" />
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="current-year"></span> Crypto Basics Hub</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn</a>
+        <a href="tools.html">Tools</a>
+        <a href="contact.html">Contact</a>
+        <a href="references.html">References</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
