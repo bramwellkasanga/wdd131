@@ -1,0 +1,181 @@
+:root {
+  --paper: #f3efe7;
+  --ink: #0f1f2c;
+  --teal: #16506a;
+  --gold: #d98f00;
+  --card: #fffdf8;
+  --line: #c8d5df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 8% 15%, #fff7da 0%, var(--paper) 40%, #dfe9ef 100%);
+  line-height: 1.6;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #0f2d41, #16506a);
+  color: #ffffff;
+  padding: 1.2rem 1rem;
+}
+
+.site-brand {
+  width: min(1000px, 92vw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 78px;
+  height: 78px;
+  flex: 0 0 auto;
+}
+
+.logo path,
+.logo circle {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: #ffe6a7;
+}
+
+h1,
+h2,
+h3,
+figcaption {
+  font-family: "Space Grotesk", "Gill Sans", sans-serif;
+}
+
+h1 {
+  margin: 0.1rem 0 0;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+}
+
+main {
+  width: min(1000px, 92vw);
+  margin: 1.2rem auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--teal);
+}
+
+ul {
+  margin-top: 0.4rem;
+}
+
+.color-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.swatch {
+  border-radius: 10px;
+  padding: 0.85rem;
+  border: 1px solid #b9c8d3;
+}
+
+.swatch h3 {
+  margin: 0 0 0.25rem;
+}
+
+.swatch p {
+  margin: 0;
+}
+
+.swatch.navy {
+  background: #ecf1f5;
+}
+
+.swatch.teal {
+  background: #e6f0f4;
+}
+
+.swatch.gold {
+  background: #fff5dd;
+}
+
+.wireframe-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-bottom: 0.5rem;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.wireframe {
+  border: 2px dashed #8aa0b2;
+  border-radius: 10px;
+  background: #f7fafc;
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.wireframe div {
+  border: 1px solid #a4b8c7;
+  border-radius: 8px;
+  background: #ffffff;
+  min-height: 2.1rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 0.92rem;
+}
+
+.wireframe.mobile {
+  grid-template-columns: 1fr;
+}
+
+.wireframe.desktop {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+@media (min-width: 760px) {
+  main {
+    margin-top: 1.6rem;
+  }
+
+  .wireframe-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

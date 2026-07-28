@@ -3,34 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Website planning document for Crypto Basics Hub in WDD 131."
+  />
   <title>Crypto Basics Hub Site Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/siteplan.css" />
 </head>
 <body>
-  <h1>Crypto Basics Hub Site Plan</h1>
-  <h2>Site Name</h2>
-  <p>Crypto Basics Hub</p>
+  <header class="page-header">
+    <div class="site-brand" aria-label="Crypto Basics Hub brand">
+      <svg
+        class="logo"
+        viewBox="0 0 120 120"
+        role="img"
+        aria-labelledby="logo-title logo-desc"
+      >
+        <title id="logo-title">Crypto Basics Hub logo</title>
+        <desc id="logo-desc">A shield with a coin symbol to represent safe crypto learning.</desc>
+        <path d="M60 7L14 28v30c0 31 18 49 46 55 28-6 46-24 46-55V28L60 7z" />
+        <circle cx="60" cy="50" r="22" />
+        <path d="M60 34v32M48 42h18a8 8 0 010 16H48h20a8 8 0 010 16H48" />
+      </svg>
+      <div>
+        <p class="kicker">WDD 131 Project Plan</p>
+        <h1>Crypto Basics Hub Site Plan</h1>
+      </div>
+    </div>
+  </header>
 
-  <h2>Site Purpose</h2>
-  <p>Provide beginner-friendly cryptocurrency education with practical security and risk-management guidance.</p>
+  <main>
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Crypto Basics Hub</strong></p>
+      <p>
+        This name was chosen because it clearly communicates that the site is a central,
+        beginner-focused place to learn the fundamentals of cryptocurrency without jargon.
+      </p>
+      <p><strong>Optional domain:</strong> cryptobasicshub.org</p>
+    </section>
 
-  <h2>Target Audience</h2>
-  <p>People who are new to cryptocurrency and want clear explanations before investing.</p>
+    <section>
+      <h2>Site Purpose</h2>
+      <p>
+        Crypto Basics Hub helps beginners make safer cryptocurrency decisions by providing
+        clear educational guides, practical security tips, and simple tools for comparing
+        coins and tracking personal readiness.
+      </p>
+    </section>
 
-  <h2>Pages</h2>
-  <ul>
-    <li>Home</li>
-    <li>Learn</li>
-    <li>Tools</li>
-    <li>Contact</li>
-    <li>References</li>
-  </ul>
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>How do I store cryptocurrency safely if I am just getting started?</li>
+        <li>What warning signs should I look for before investing in a new coin?</li>
+        <li>Where can I contact the site owner to ask a beginner question?</li>
+      </ul>
+    </section>
 
-  <h2>Dynamic Features</h2>
-  <ul>
-    <li>Visit counter with localStorage</li>
-    <li>Glossary filter from JavaScript objects and arrays</li>
-    <li>Readiness quiz with conditional output</li>
-    <li>Watchlist and contact submission storage using localStorage</li>
-  </ul>
+    <section>
+      <h2>Color Schema</h2>
+      <p>
+        The site uses a calm and trustworthy color palette that supports readability and a
+        technical theme.
+      </p>
+      <div class="color-grid" aria-label="Color schema samples">
+        <article class="swatch navy">
+          <h3>Deep Navy (#0f1f2c)</h3>
+          <p>Used for headings, body text, and key UI text.</p>
+        </article>
+        <article class="swatch teal">
+          <h3>Signal Teal (#16506a)</h3>
+          <p>Used for section accents, highlighted labels, and links.</p>
+        </article>
+        <article class="swatch gold">
+          <h3>Alert Gold (#d98f00)</h3>
+          <p>Used for callouts, buttons, and emphasis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <ul>
+        <li><strong>Space Grotesk:</strong> Main headings and section titles.</li>
+        <li><strong>DM Sans:</strong> Body text, lists, and supporting details.</li>
+      </ul>
+      <p>
+        These fonts are modern, readable, and help communicate a clear educational style.
+      </p>
+    </section>
+
+    <section>
+      <h2>Wireframes</h2>
+      <p>
+        The following low-fidelity wireframes show the planned home page layout in mobile
+        and desktop views.
+      </p>
+
+      <div class="wireframe-layout">
+        <figure>
+          <figcaption>Mobile View</figcaption>
+          <div class="wireframe mobile" role="img" aria-label="Mobile home page wireframe">
+            <div>Header + Logo</div>
+            <div>Hero / Intro</div>
+            <div>Featured Lesson</div>
+            <div>Security Tips</div>
+            <div>Tools Preview</div>
+            <div>Footer</div>
+          </div>
+        </figure>
+
+        <figure>
+          <figcaption>Desktop View</figcaption>
+          <div class="wireframe desktop" role="img" aria-label="Desktop home page wireframe">
+            <div class="span-2">Header + Navigation</div>
+            <div class="span-2">Hero / Intro Banner</div>
+            <div>Featured Lesson</div>
+            <div>Security Tips</div>
+            <div class="span-2">Tools Preview</div>
+            <div class="span-2">Footer</div>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
