@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review | WDD 131</title>
+  <meta name="description" content="Submit a product review with rating, installation date, useful features, and optional comments.">
+  <meta name="author" content="Bramwell Kasanga">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer src="scripts/form.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">WDD 131 - Week 05</p>
+    <h1>Product Review Form</h1>
+    <p class="lead">Share your experience so others can make smarter product decisions.</p>
+  </header>
+
+  <main class="page-main">
+    <form method="get" action="review.html" class="review-form">
+      <div class="field-group">
+        <label for="product">Product Name <span aria-hidden="true">*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="field-group">
+        <legend>Overall Rating <span aria-hidden="true">*</span></legend>
+        <div class="rating-grid">
+          <label for="rating-1" class="rating-option">☆
+            <input id="rating-1" type="radio" name="rating" value="1" required>
+          </label>
+          <label for="rating-2" class="rating-option">☆☆
+            <input id="rating-2" type="radio" name="rating" value="2" required>
+          </label>
+          <label for="rating-3" class="rating-option">☆☆☆
+            <input id="rating-3" type="radio" name="rating" value="3" required>
+          </label>
+          <label for="rating-4" class="rating-option">☆☆☆☆
+            <input id="rating-4" type="radio" name="rating" value="4" required>
+          </label>
+          <label for="rating-5" class="rating-option">☆☆☆☆☆
+            <input id="rating-5" type="radio" name="rating" value="5" required>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field-group">
+        <label for="installDate">Date of Installation <span aria-hidden="true">*</span></label>
+        <input id="installDate" name="installDate" type="date" required>
+      </div>
+
+      <fieldset class="field-group">
+        <legend>Useful Features (Check all that apply)</legend>
+        <div class="checkbox-grid">
+          <label for="feature-durability">
+            <input id="feature-durability" name="features" type="checkbox" value="Durability">
+            Durability
+          </label>
+          <label for="feature-ease">
+            <input id="feature-ease" name="features" type="checkbox" value="Ease of use">
+            Ease of use
+          </label>
+          <label for="feature-performance">
+            <input id="feature-performance" name="features" type="checkbox" value="Performance">
+            Performance
+          </label>
+          <label for="feature-design">
+            <input id="feature-design" name="features" type="checkbox" value="Design">
+            Design
+          </label>
+          <label for="feature-support">
+            <input id="feature-support" name="features" type="checkbox" value="Customer support">
+            Customer support
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="field-group">
+        <label for="reviewText">Written Review (Optional)</label>
+        <textarea id="reviewText" name="reviewText" rows="5" placeholder="What worked well? What could be improved?"></textarea>
+      </div>
+
+      <div class="field-group">
+        <label for="userName">Your Name (Optional)</label>
+        <input id="userName" name="userName" type="text" autocomplete="name" placeholder="Jane Reviewer">
+      </div>
+
+      <input type="submit" value="Post Review" class="submit-btn">
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; <span id="currentYear"></span> Bramwell Kasanga | South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
