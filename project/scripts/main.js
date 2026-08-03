@@ -57,7 +57,8 @@ function trackVisits() {
   const storedCount = Number(localStorage.getItem("cryptoVisitCount") ?? "0");
   const nextCount = storedCount + 1;
   localStorage.setItem("cryptoVisitCount", `${nextCount}`);
-  visitNode.textContent = `${nextCount}`;
+  const timeWord = nextCount === 1 ? "time" : "times";
+  visitNode.textContent = `${nextCount} ${timeWord}`;
 }
 
 function renderDailyTip() {

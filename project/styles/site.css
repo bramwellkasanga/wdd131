@@ -22,9 +22,6 @@ html {
   font-family: "Trebuchet MS", "Gill Sans", sans-serif;
   color: var(--ink);
   background: radial-gradient(circle at 10% 10%, #fff7d6 0%, var(--paper) 42%, #dce8ef 100%);
-}
-
-html {
   scroll-behavior: smooth;
 }
 
